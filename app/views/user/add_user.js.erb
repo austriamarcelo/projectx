@@ -1,0 +1,18 @@
+ <%if @user.errors.any?%> 
+swal(
+  'Oops...',
+  'Something went wrong!',
+  'error'
+)
+
+<%else%>
+
+
+swal(
+  'Good job!',
+  'Successfully Created!',
+  'success'
+)
+ $('#user_form')[0].reset();
+<%end%>
+
